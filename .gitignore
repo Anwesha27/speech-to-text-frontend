@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ignore node_modules and sensitive files
+node_modules/
+*.pem
+*.key
+*.env
+
+# Build directories
+dist/
+dist-ssr/
+build/
+out/  # For Next.js builds
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache files
+.cache/
+.next/
+npm-cache/
+.yarn-cache/
+.pnp.*
+.pnpm-store/
+
+# Testing
+coverage/
+jest/
+*.lcov
+
+# Miscellaneous
+*.bak
+*.tmp
+*.lock
