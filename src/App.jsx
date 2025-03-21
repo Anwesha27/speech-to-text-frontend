@@ -31,7 +31,8 @@ function App() {
     formData.append('audio', audioFile);
 
     try {
-      const response = await axios.post('http://localhost:5175/transcribe', formData, { // Backend endpoint
+      const API_URL = process.env.REACT_APP_API_URL || "https://speech-to-text-backend.up.railway.app/";
+      const response = await axios.post(API_URL, formData, { // Backend endpoint
         headers: {
           'Content-Type': 'multipart/form-data',
         },
